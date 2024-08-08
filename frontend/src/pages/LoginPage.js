@@ -12,6 +12,7 @@ const LoginPage = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     await login(email, password);
+    console.log('123');
     navigate('/dashboard'); // Redirect to the dashboard
   };
 
